@@ -1,0 +1,90 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- White Circle Background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M256,256m-240,0a240,240 0,1 1,480,0a240,240 0,1 1,-480,0" />
+
+    <!-- Dark Gray/Black Outer Border for Badge Look -->
+    <path
+        android:strokeColor="#1E293B"
+        android:strokeWidth="12"
+        android:pathData="M256,256m-220,0a220,220 0,1 1,440,0a220,220 0,1 1,-440,0" />
+
+    <!-- Group of Main Cup Elements (centered) -->
+    <group
+        android:translateX="256"
+        android:translateY="240"
+        android:pivotX="0"
+        android:pivotY="0">
+
+        <!-- Outer Cup Body Outline -->
+        <path
+            android:fillColor="#1E293B"
+            android:strokeColor="#1E293B"
+            android:strokeWidth="10"
+            android:pathData="M-60,-50 L60,-50 L45,100 L-45,100 Z" />
+
+        <!-- Liquid Level Shadow Layer -->
+        <path
+            android:fillColor="#334155"
+            android:pathData="M-55,-10 L55,-10 L45,100 L-45,100 Z" />
+
+        <!-- Cup Rim / Lid -->
+        <path
+            android:fillColor="#0F172A"
+            android:pathData="M-75,-65 L75,-65 C75,-65 75,-50 65,-50 L-65,-50 C-75,-50 -75,-65 -75,-65 Z" />
+
+        <!-- Straw (Black/White striped representation) -->
+        <!-- Straw angle pointing top-left -->
+        <path
+            android:strokeColor="#0F172A"
+            android:strokeWidth="18"
+            android:strokeLineCap="round"
+            android:pathData="M-20,-30 L-70,-140 C-70,-140 -80,-160 -110,-150" />
+
+        <!-- Ice Cubes inside the liquid -->
+        <!-- Left Ice Cube -->
+        <path
+            android:fillColor="#E2E8F0"
+            android:strokeColor="#0F172A"
+            android:strokeWidth="6"
+            android:pathData="M-25,10 L10,15 L0,50 L-35,45 Z" />
+        <!-- Right Ice Cube -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeColor="#0F172A"
+            android:strokeWidth="6"
+            android:pathData="M5,35 L40,25 L50,55 L15,65 Z" />
+
+        <!-- Leaves (Mint) on the side -->
+        <!-- Left Leaf -->
+        <path
+            android:fillColor="#1E293B"
+            android:pathData="M50,-40 C75,-40 90,-25 90,-5 C90,15 70,20 50,0 C50,0 45,-20 50,-40 Z" />
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4"
+            android:pathData="M50,-20 C65,-15 75,-10 90,-5" />
+
+        <!-- Right Leaf -->
+        <path
+            android:fillColor="#475569"
+            android:pathData="M60,-80 C90,-90 110,-75 110,-55 C110,-35 85,-40 65,-60 C65,-60 55,-70 60,-80 Z" />
+    </group>
+
+    <!-- Bottom Decorative Script Ribbon -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M100,380 L412,380 C430,380 430,420 412,420 L100,420 C80,420 80,380 100,380 Z" />
+
+    <!-- Stylized text outline representation using vectors for professional badge aesthetic -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M180,405 C185,405 190,400 195,395 C200,405 205,405 210,405 L340,405" />
+
+</vector>

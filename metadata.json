@@ -1,0 +1,6 @@
+{
+  "name": "Kedai Es Ndeso",
+  "description": "Sistem Kasir untuk Kedai Es Ndeso",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
