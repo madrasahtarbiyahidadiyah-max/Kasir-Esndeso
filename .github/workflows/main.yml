@@ -21,16 +21,15 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+      # (Langkah 'chmod gradlew' yang bikin error tadi sudah saya hapus total)
 
-      # --- INI OBATNYA: Memaksa server membuat debug.keystore palsu ---
       - name: Generate Dummy Debug Keystore
         run: |
           keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
 
+      # Perintah './gradlew' diganti menjadi 'gradle' biasa
       - name: Build Debug APK
-        run: ./gradlew assembleDebug
+        run: gradle assembleDebug
 
       - name: Upload APK ke GitHub
         uses: actions/upload-artifact@v4
